@@ -9,7 +9,9 @@ export function getActionFromKey(k, player){
         case Settings.keys.right:
             return player.right();
         case Settings.keys.left: 
-            return player.left();           
+            return player.left();  
+        default:
+            return console.log(k)               
     }
 }
 
