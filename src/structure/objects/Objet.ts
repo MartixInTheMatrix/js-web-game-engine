@@ -1,4 +1,4 @@
-export class Object{
+export default class Objet{
     /**
      * @typedef Object
      * @property {string} type
@@ -15,7 +15,15 @@ export class Object{
      * @param {Object} object 
      */
 
-    constructor(object){
+    type: string;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    radius: number;
+    color: string;
+
+    constructor(object: any){
         this.type = object.type || undefined;
         this.x = object.x || 0;
         this.y = object.y || 0;
@@ -25,7 +33,7 @@ export class Object{
         this.color = object.color?object.color : false || 'green';
     }
 
-    getTypeFromString(t, ctx){
+    getTypeFromString(t:string, ctx:any){
         switch(t){
             case "rect":
                 return ctx.rect(this.x, this.y, this.width, this.height);
@@ -34,7 +42,7 @@ export class Object{
         }
     }
 
-    draw(ctx){
+    draw(ctx:any){
         this.getTypeFromString(this.type, ctx)
         ctx.fillStyle = this.color;
         ctx.fill();

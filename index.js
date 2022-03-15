@@ -1,7 +1,9 @@
+import * as Game from './build/Instance.js' 
+
 window.onload = async ()=>{
-    const { Game } = await import('./Instance.js')
+
+    console.log(Game)
     const process = new Game(window)
-    
-    process.addRect(window.innerWidth/2,window.innerHeight/2,50,50)
+    process.addRect(window.innerWidth/2,window.innerHeight/2, 50, 50)
     process.start()
 }

@@ -1,0 +1,19 @@
+{
+  "name": "js-web-game-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartixInTheMatrix/js-web-game-engine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartixInTheMatrix/js-web-game-engine/issues"
+  },
+  "homepage": "https://github.com/MartixInTheMatrix/js-web-game-engine#readme"
+}
